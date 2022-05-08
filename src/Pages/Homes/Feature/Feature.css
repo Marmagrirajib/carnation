@@ -5,6 +5,18 @@
     background-color: orangered;
 }
 
+.info-text {
+    text-align: right;
+}
+
+.info-text2 {
+    text-align: left;
+}
+
+.icons {
+    width: 40px;
+}
+
 .detail {
     text-align: right;
     font-size: 18px;

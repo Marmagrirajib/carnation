@@ -1,6 +1,10 @@
 import React from 'react';
 import './Feature.css';
 import main from '../../../Images/main.png';
+import icon1 from '../../../Images/icon1.png'
+import icon2 from '../../../Images/icon2.png'
+import icon3 from '../../../Images/icon3.png'
+import icon4 from '../../../Images/icon4.png'
 
 const Feature = () => {
     return (
@@ -11,7 +15,8 @@ const Feature = () => {
             <div className="row mt-5">
                 <div className="col-lg-4">
                     <div className="info-text">
-                        <h5 className='detail mt-5'>SUPER FAST CAR
+                        <img className='img-fluid icons' src={icon1} alt="" />
+                        <h5 className='detail mt-3'>SUPER FAST CAR
                         </h5>
                         <p className='detail-p'>Placlder text commonly used detrate theyjlos visual form amet, consectetur ading elitmod tempor used.
 
@@ -19,7 +24,8 @@ const Feature = () => {
                     </div>
 
                     <div className="info-text">
-                        <h5 className='detail mt-5'>DEALERSHIP POINTS
+                        <img className='img-fluid icons' src={icon2} alt="" />
+                        <h5 className='detail mt-3'>DEALERSHIP POINTS
 
                         </h5>
                         <p className='detail-p'>Placlder text commonly used detrate theyjlos visual form amet, consectetur ading elitmod tempor used.
@@ -32,16 +38,18 @@ const Feature = () => {
                 </div>
 
                 <div className="col-lg-4">
-                    <div className="info-text">
-                        <h5 className='detail2 mt-5'>SUPER FAST CAR
+                    <div className="info-text2">
+                        <img className='img-fluid icons' src={icon3} alt="" />
+                        <h5 className='detail2 mt-3'>SUPER FAST CAR
                         </h5>
                         <p className='detail-2'>Placlder text commonly used detrate theyjlos visual form amet, consectetur ading elitmod tempor used.
 
                         </p>
                     </div>
 
-                    <div className="info-text">
-                        <h5 className='detail2 mt-5'>DEALERSHIP POINTS
+                    <div className="info-text2">
+                        <img className='img-fluid icons' src={icon4} alt="" />
+                        <h5 className='detail2 mt-3'>DEALERSHIP POINTS
 
                         </h5>
                         <p className='detail-2'>Placlder text commonly used detrate theyjlos visual form amet, consectetur ading elitmod tempor used.
