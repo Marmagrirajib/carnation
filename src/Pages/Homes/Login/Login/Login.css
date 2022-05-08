@@ -9,3 +9,9 @@
     width: 100%;
     background-color: #FF592D !important;
 }
+
+.image {
+    margin-left: 150px;
+    border-radius: 10px;
+
+}

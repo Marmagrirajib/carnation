@@ -2,7 +2,7 @@ import React, { useRef } from "react";
 // import { useCreateUserWithEmailAndPassword } from "react-firebase-hooks/auth";
 import { Link, useNavigate } from "react-router-dom";
 import auth from "../../../../firebase.init";
-import image from "../../../../Images/banner3.jpg";
+import image from "../../../../Images/man2.jpg";
 // import Social from "../Social/Social";
 
 const Register = () => {
@@ -33,7 +33,7 @@ const Register = () => {
         <div className="container mt-5">
             <div className="row d-flex justify-content-center align-items-center">
                 <div className="col lg-6">
-                    <img className="img-fluid" src={image} alt="" />
+                    <img className="img-fluid image" src={image} alt="" />
                 </div>
                 <div className="col-lg-6">
                     <div className="form">

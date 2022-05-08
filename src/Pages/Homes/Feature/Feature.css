@@ -1,0 +1,30 @@
+.line {
+
+    width: 100px;
+    height: 5px;
+    background-color: orangered;
+}
+
+.detail {
+    text-align: right;
+    font-size: 18px;
+    font-weight: 600;
+    margin-bottom: 9px;
+}
+
+.detail-p {
+    text-align: right;
+
+}
+
+.detail2 {
+    text-align: left;
+    font-size: 18px;
+    font-weight: 600;
+    margin-bottom: 9px;
+}
+
+.detail-2 {
+    text-align: left;
+
+}

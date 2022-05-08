@@ -1,6 +1,7 @@
 import React, { useRef } from "react";
 import { Link, useLocation, useNavigate } from "react-router-dom";
-import image from "../../../../Images/banner4.jpg";
+import image from "../../../../Images/man.jpg";
+
 import "./Login.css";
 // import {
 //     useSendPasswordResetEmail,
@@ -45,13 +46,14 @@ const Login = () => {
     return (
         <div className="container mt-5">
             <div className="row d-flex justify-content-center align-items-center">
-                <div className="col lg-6">
-                    <img className="img-fluid" src={image} alt="" />
+                <div className="col lg-6 d-flex">
+                    <img className="img-fluid image" src={image} alt="" />
+
                 </div>
                 <div className="col-lg-6">
                     <div className="form">
                         <form onSubmit={handleSubmit}>
-                            <h4 className="text-center">Please Login</h4>
+                            <h4 className="text-center mb-4">Please Login</h4>
                             <div className="mb-3">
                                 <label for="exampleInputEmail1" className="form-label">
                                     Email address

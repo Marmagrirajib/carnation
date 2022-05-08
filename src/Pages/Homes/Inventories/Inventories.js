@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import Inventory from '../Inventory/Inventory';
+import './Inventories.css';
 
 const Inventories = () => {
 
@@ -15,7 +16,7 @@ const Inventories = () => {
 
     return (
         <div className='container'>
-            <h2 className='text-center mt-5'>Inventory Items</h2>
+            <h2 className='text-center mt-5 title'>Inventory Items</h2>
             <div className="row">
                 {
                     inventories.map(inventory => <Inventory
