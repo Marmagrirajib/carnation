@@ -1,0 +1,11 @@
+.form {
+    background-color: rgb(255, 255, 255);
+    padding: 30px 100px;
+    border-radius: 10px;
+}
+
+.button {
+    border: none;
+    width: 100%;
+    background-color: #FF592D !important;
+}
