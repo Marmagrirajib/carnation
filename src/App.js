@@ -6,6 +6,7 @@ import About from './Pages/About/About';
 import Header from './Pages/Shared/Header/Header';
 import Footer from './Pages/Shared/Footer/Footer';
 import ItemDetails from './Pages/ItemsDetails/ItemDetails';
+import NotFound from './Pages/Shared/NotFound/NotFound';
 
 
 
@@ -17,6 +18,7 @@ function App() {
         <Route path='/' element={<Home></Home>}></Route>
         <Route path='/inventory/:InventoryId' element={<ItemDetails></ItemDetails>}></Route>
         <Route path='/about' element={<About></About>}></Route>
+        <Route path='*' element={<NotFound></NotFound>}></Route>
 
       </Routes>
       <Footer></Footer>
