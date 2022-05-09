@@ -1,5 +1,5 @@
 import React, { useRef } from "react";
-// import { useCreateUserWithEmailAndPassword } from "react-firebase-hooks/auth";
+import { useCreateUserWithEmailAndPassword } from "react-firebase-hooks/auth";
 import { Link, useNavigate } from "react-router-dom";
 import auth from "../../../../firebase.init";
 import image from "../../../../Images/man2.jpg";
@@ -8,25 +8,25 @@ import image from "../../../../Images/man2.jpg";
 const Register = () => {
     const emailRef = useRef("");
     const passwordRef = useRef("");
-    // const [createUserWithEmailAndPassword, user] = useCreateUserWithEmailAndPassword(auth, {
-    //     sendEmailVerification: true,
-    // });
+    const [createUserWithEmailAndPassword, user] = useCreateUserWithEmailAndPassword(auth, {
+        sendEmailVerification: true,
+    });
 
     const navigate = useNavigate();
     const navigateLogin = () => {
         navigate("/login");
     };
 
-    // if (user) {
-    //     navigate("/home");
-    // }
+    if (user) {
+        navigate("/");
+    }
 
     const handleRegister = (event) => {
         event.preventDefault();
         const email = emailRef.current.value;
         const password = passwordRef.current.value;
         console.log(email, password);
-        // createUserWithEmailAndPassword(email, password);
+        createUserWithEmailAndPassword(email, password);
     };
 
     return (

@@ -3,10 +3,10 @@ import { Link, useLocation, useNavigate } from "react-router-dom";
 import image from "../../../../Images/man.jpg";
 
 import "./Login.css";
-// import {
-//     useSendPasswordResetEmail,
-//     useSignInWithEmailAndPassword,
-// } from "react-firebase-hooks/auth";
+import {
+    useSendPasswordResetEmail,
+    useSignInWithEmailAndPassword,
+} from "react-firebase-hooks/auth";
 import auth from "../../../../firebase.init";
 // import Social from "../Social/Social";
 
@@ -17,20 +17,20 @@ const Login = () => {
     const location = useLocation();
     const from = location?.state?.from.pathname || "/";
 
-    // const [signInWithEmailAndPassword, user, loading, error] =
-    //     useSignInWithEmailAndPassword(auth);
+    const [signInWithEmailAndPassword, user, loading, error] =
+        useSignInWithEmailAndPassword(auth);
 
-    // const [sendPasswordResetEmail] = useSendPasswordResetEmail(auth);
+    const [sendPasswordResetEmail] = useSendPasswordResetEmail(auth);
 
-    // if (user) {
-    //     navigate(from, { replace: true });
-    // }
+    if (user) {
+        navigate(from, { replace: true });
+    }
 
     const handleSubmit = (event) => {
         event.preventDefault();
         const email = emailRef.current.value;
         const password = passwordRef.current.value;
-        // signInWithEmailAndPassword(email, password);
+        signInWithEmailAndPassword(email, password);
         console.log(email, password);
     };
 
@@ -39,7 +39,7 @@ const Login = () => {
     };
     const resetPassword = async () => {
         const email = emailRef.current.value;
-        // await sendPasswordResetEmail(email);
+        await sendPasswordResetEmail(email);
         alert("Sent email");
     };
 
@@ -80,14 +80,14 @@ const Login = () => {
                                     id="exampleInputPassword1"
                                 />
                             </div>
-                            {/* <p>{error?.message}</p> */}
+                            <p>{error?.message}</p>
 
                             <button type="submit" className="btn btn-primary button">
                                 Login
                             </button>
                         </form>
                         <p className="text-center mt-3">
-                            New to ths website?{" "}
+                            Are you new this website?{" "}
                             <Link
                                 onClick={navigateRegister}
                                 className="pe-auto text-decoration-none text-danger"

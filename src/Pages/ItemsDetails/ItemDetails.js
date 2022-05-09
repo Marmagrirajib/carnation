@@ -1,11 +1,12 @@
 import React from 'react';
-import { useParams } from 'react-router-dom';
+import { Link, useParams } from 'react-router-dom';
 
 const ItemDetails = () => {
     const { InventoryId } = useParams();
     return (
-        <div>
-            <h2 className='text-center mt-5'>Welcome to Inventory Details :{InventoryId}</h2>
+        <div className='container mt-5 text-center'>
+            <h4>Do you want to update any Inventory? If yes please login first. </h4>
+            <Link to='/update'><button className='btn btn-info mt-3'>Update Now</button></Link>
         </div>
     );
 };

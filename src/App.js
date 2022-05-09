@@ -9,6 +9,8 @@ import ItemDetails from './Pages/ItemsDetails/ItemDetails';
 import NotFound from './Pages/Shared/NotFound/NotFound';
 import Login from './Pages/Homes/Login/Login/Login';
 import Register from './Pages/Homes/Login/Register/Register';
+import Update from './Pages/Update/Update';
+import RequiredAuth from './Pages/Homes/Login/RequiredAuth/RequiredAuth';
 
 
 
@@ -22,6 +24,9 @@ function App() {
         <Route path='/about' element={<About></About>}></Route>
         <Route path='/login' element={<Login></Login>}></Route>
         <Route path='/register' element={<Register></Register>}></Route>
+        <Route path='/update' element={<RequiredAuth>
+          <Update></Update>
+        </RequiredAuth>}></Route>
         <Route path='*' element={<NotFound></NotFound>}></Route>
 
       </Routes>
