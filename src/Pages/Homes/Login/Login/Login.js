@@ -8,7 +8,7 @@ import {
     useSignInWithEmailAndPassword,
 } from "react-firebase-hooks/auth";
 import auth from "../../../../firebase.init";
-// import Social from "../Social/Social";
+import Social from "../Social/Social";
 
 const Login = () => {
     const emailRef = useRef("");
@@ -17,7 +17,7 @@ const Login = () => {
     const location = useLocation();
     const from = location?.state?.from.pathname || "/";
 
-    const [signInWithEmailAndPassword, user, loading, error] =
+    const [signInWithEmailAndPassword, user, error] =
         useSignInWithEmailAndPassword(auth);
 
     const [sendPasswordResetEmail] = useSendPasswordResetEmail(auth);
@@ -106,7 +106,7 @@ const Login = () => {
                                 Reset Password
                             </Link>
                         </p>
-                        {/* <Social></Social> */}
+                        <Social></Social>
                     </div>
                 </div>
             </div>

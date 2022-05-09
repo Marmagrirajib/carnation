@@ -1,4 +1,5 @@
 import React from 'react';
+import './Banner.css';
 import { Carousel } from 'react-bootstrap';
 import banner1 from '../../../Images/banner3.jpg';
 import banner2 from '../../../Images/banner2.jpg';
@@ -16,7 +17,7 @@ const Banner = () => {
                 <Carousel.Caption>
                     <h3>CHEVROLET</h3>
                     <p>Chevrolet, or Chevy for short, is a division of General Motors. It is one of the most popular GM marques.</p>
-                    <button className='btn button'>More Info</button>
+                    <button className='btn buttons'>More Info</button>
                 </Carousel.Caption>
             </Carousel.Item>
             <Carousel.Item>
@@ -29,7 +30,7 @@ const Banner = () => {
                 <Carousel.Caption>
                     <h3>AUDI</h3>
                     <p>August Horch founded his first automobile company, August Horch & Cie, in Cologne in 1899.</p>
-                    <button className='btn button'>More Info</button>
+                    <button className='btn buttons'>More Info</button>
                 </Carousel.Caption>
             </Carousel.Item>
             <Carousel.Item>
@@ -42,7 +43,7 @@ const Banner = () => {
                 <Carousel.Caption>
                     <h3>BMW</h3>
                     <p>BMW entered the automobile business in 1928. The company's R32 motorcycle set a world speed record that was not broken until 1937.</p>
-                    <button className='btn button'>More Info</button>
+                    <button className='btn buttons'>More Info</button>
                 </Carousel.Caption>
             </Carousel.Item>
         </Carousel>

@@ -3,7 +3,7 @@ import { useCreateUserWithEmailAndPassword } from "react-firebase-hooks/auth";
 import { Link, useNavigate } from "react-router-dom";
 import auth from "../../../../firebase.init";
 import image from "../../../../Images/man2.jpg";
-// import Social from "../Social/Social";
+import Social from "../Social/Social";
 
 const Register = () => {
     const emailRef = useRef("");
@@ -95,7 +95,7 @@ const Register = () => {
                                 Please Login
                             </Link>
                         </p>
-                        {/* <Social></Social> */}
+                        <Social></Social>
                     </div>
                 </div>
             </div>
