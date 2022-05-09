@@ -1,6 +1,9 @@
 import React, { useRef } from "react";
 import { Link, useLocation, useNavigate } from "react-router-dom";
 import image from "../../../../Images/man.jpg";
+import { ToastContainer, toast } from 'react-toastify';
+
+import 'react-toastify/dist/ReactToastify.css';
 
 import "./Login.css";
 import {
@@ -40,7 +43,7 @@ const Login = () => {
     const resetPassword = async () => {
         const email = emailRef.current.value;
         await sendPasswordResetEmail(email);
-        alert("Sent email");
+        toast("Sent email");
     };
 
     return (
@@ -64,6 +67,7 @@ const Login = () => {
                                     className="form-control"
                                     id="exampleInputEmail1"
                                     aria-describedby="emailHelp"
+                                    required
                                 />
                                 <div id="emailHelp" className="form-text">
                                     We'll never share your email with anyone else.
@@ -78,6 +82,7 @@ const Login = () => {
                                     type="password"
                                     className="form-control"
                                     id="exampleInputPassword1"
+                                    required
                                 />
                             </div>
                             <p>{error?.message}</p>
@@ -98,15 +103,16 @@ const Login = () => {
                         </p>
                         <p className="text-center">
                             Forget Password?{" "}
-                            <Link
+                            <button
                                 onClick={resetPassword}
-                                className="pe-auto text-decoration-none text-primary"
+                                className="btn btn-link pe-auto text-decoration-none text-primary"
                                 to="/register"
                             >
                                 Reset Password
-                            </Link>
+                            </button>
                         </p>
                         <Social></Social>
+                        <ToastContainer />
                     </div>
                 </div>
             </div>

@@ -48,7 +48,7 @@ const Register = () => {
                                     type="email"
                                     className="form-control"
                                     id="exampleInputEmail1"
-                                    aria-describedby="emailHelp"
+                                    aria-describedby="emailHelp" required
                                 />
                                 <div id="emailHelp" className="form-text">
                                     We'll never share your email with anyone else.
@@ -63,6 +63,7 @@ const Register = () => {
                                     type="password"
                                     className="form-control"
                                     id="exampleInputPassword1"
+                                    required
                                 />
                             </div>
                             <div className="mb-3">
@@ -73,6 +74,7 @@ const Register = () => {
                                     type="password"
                                     className="form-control"
                                     id="exampleInputPassword1"
+                                    required
                                 />
                             </div>
                             <div className="mb-3 form-check">
