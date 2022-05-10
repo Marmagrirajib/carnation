@@ -8,3 +8,4 @@ Open [https://car-shop-c0ea2.web.app](https://car-shop-c0ea2.web.app)
 - I like very to use bootstarp so used bootstrap to responsive in this project
 - Used firebase for authenticaion
 - Creared fake data for service section
+- Used mongdb for database

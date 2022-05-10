@@ -20,17 +20,19 @@ const ItemDetails = () => {
     return (
         <div className='container mt-5'>
 
-            <div className="row">
+            <div className="row align-items-center">
                 <div className="col-lg-6">
                     <img className='img-fluid' src={inventories.image} alt="" />
                 </div>
                 <div className="col-lg-6">
-                    <h2>{inventories.name}</h2>
-                    <h5>Supplier: {inventories.supplier}</h5>
-                    <h5>Price: {inventories.price}</h5>
-                    <h5>Quantity: {inventories.quantity}</h5>
-                    <p>{inventories.description}</p>
-                    <button className='btn btn-danger'>Delivert</button> <button className='btn btn-success'>Add Item</button>
+                    <div className='ms-5'>
+                        <h2>{inventories.name}</h2>
+                        <h5>Supplier: {inventories.supplier}</h5>
+                        <h5>Price: {inventories.price}</h5>
+                        <h5>Quantity: {inventories.quantity}</h5>
+                        <p>{inventories.description}</p>
+                        <button className='btn btn-danger'>Delivert</button> <button className='btn btn-success'>Add Item</button>
+                    </div>
                 </div>
             </div>
 

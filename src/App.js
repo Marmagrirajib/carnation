@@ -22,8 +22,6 @@ function App() {
       <Header></Header>
       <Routes>
         <Route path='/' element={<Home></Home>}></Route>
-        {/* <Route path='/inventory/:InventoryId' element={<ItemDetails></ItemDetails>}></Route> */}
-
         <Route path='/about' element={<About></About>}></Route>
         <Route path='/blog' element={<Blog></Blog>}></Route>
         <Route path='/login' element={<Login></Login>}></Route>
