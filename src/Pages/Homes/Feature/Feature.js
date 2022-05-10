@@ -40,7 +40,7 @@ const Feature = () => {
                 <div className="col-lg-4">
                     <div className="info-text2">
                         <img className='img-fluid icons' src={icon3} alt="" />
-                        <h5 className='detail2 mt-3'>SUPER FAST CAR
+                        <h5 className='detail2 mt-3'>SUPER SERVICE
                         </h5>
                         <p className='detail-2'>Placlder text commonly used detrate theyjlos visual form amet, consectetur ading elitmod tempor used.
 
@@ -49,7 +49,7 @@ const Feature = () => {
 
                     <div className="info-text2">
                         <img className='img-fluid icons' src={icon4} alt="" />
-                        <h5 className='detail2 mt-3'>DEALERSHIP POINTS
+                        <h5 className='detail2 mt-3'>LOAN FACILITIES
 
                         </h5>
                         <p className='detail-2'>Placlder text commonly used detrate theyjlos visual form amet, consectetur ading elitmod tempor used.
