@@ -11,6 +11,8 @@ import Login from './Pages/Homes/Login/Login/Login';
 import Register from './Pages/Homes/Login/Register/Register';
 import Update from './Pages/Update/Update';
 import RequiredAuth from './Pages/Homes/Login/RequiredAuth/RequiredAuth';
+import Blog from './Pages/Blog/Blog';
+
 
 
 
@@ -21,12 +23,15 @@ function App() {
       <Routes>
         <Route path='/' element={<Home></Home>}></Route>
         <Route path='/inventory/:InventoryId' element={<ItemDetails></ItemDetails>}></Route>
+
         <Route path='/about' element={<About></About>}></Route>
+        <Route path='/blog' element={<Blog></Blog>}></Route>
         <Route path='/login' element={<Login></Login>}></Route>
         <Route path='/register' element={<Register></Register>}></Route>
         <Route path='/update' element={<RequiredAuth>
           <Update></Update>
         </RequiredAuth>}></Route>
+
         <Route path='*' element={<NotFound></NotFound>}></Route>
 
       </Routes>

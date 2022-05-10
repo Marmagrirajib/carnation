@@ -1,56 +1,56 @@
 [
     {
         "id": 1,
-        "name": "Leanne Graham",
-        "image": "https://themebeyond.com/html/carnation/carnation/img/images/s_released_cars_thumb01.jpg",
-        "description": "Sincere@april.biz",
-        "price": "$400",
+        "name": "BMW-L2040",
+        "image": "https://img.freepik.com/free-photo/silver-metallic-color-sport-sedan-road_114579-5035.jpg",
+        "description": "BMW entered the automobile business in 1928. The company's R32 motorcycle set a world speed record that was not broken until 1937.",
+        "price": "$1400",
         "quantity": "100",
         "supplier": "Hunggama"
     },
     {
         "id": 2,
-        "name": "Leanne Graham",
-        "image": "https://themebeyond.com/html/carnation/carnation/img/images/s_released_cars_thumb02.jpg",
-        "description": "Sincere@april.biz",
-        "price": "1-770-736-8031 x56442",
-        "quantity": "hildegard.org",
-        "supplier": "hildegard.org"
+        "name": "Mazeda-LS5",
+        "image": "https://img.freepik.com/free-photo/red-mini-coupe-driving-highway-with-high-speed_114579-4060.jpg",
+        "description": "The name “Mazda” was introduced to Japan in October 1931. Mazda started its life as a cork manufacturer back in 1920.",
+        "price": "$1200",
+        "quantity": "20",
+        "supplier": "Ali Baba"
     },
     {
         "id": 3,
-        "name": "Leanne Graham",
-        "image": "https://themebeyond.com/html/carnation/carnation/img/images/s_released_cars_thumb03.jpg",
-        "description": "Sincere@april.biz",
-        "price": "1-770-736-8031 x56442",
-        "quantity": "hildegard.org",
-        "supplier": "hildegard.org"
+        "name": "Audi S-Class 2022",
+        "image": "https://img.freepik.com/free-photo/luxury-sport-car-with-xenon-lights-front-view_114579-5062.jpg",
+        "description": "August Horch founded his first automobile company, August Horch & Cie, in Cologne in 1899 this company relaced this car.",
+        "price": "$2400",
+        "quantity": "40",
+        "supplier": "Hildegard"
     },
     {
         "id": 4,
-        "name": "Leanne Graham",
-        "image": "https://themebeyond.com/html/carnation/carnation/img/images/s_released_cars_thumb04.jpg",
-        "description": "Sincere@april.biz",
-        "price": "1-770-736-8031 x56442",
-        "quantity": "hildegard.org",
-        "supplier": "hildegard.org"
+        "name": "Audi C-Class 2021",
+        "image": "https://img.freepik.com/free-photo/black-sport-car-highway-drive-sunset_114579-5064.jpg",
+        "description": "August Horch founded his first automobile company, August Horch & Cie, in Cologne in 1899 this company relaced this car.",
+        "price": "$2100",
+        "quantity": "35",
+        "supplier": "Suzuki"
     },
     {
         "id": 5,
-        "name": "Leanne Graham",
-        "image": "https://themebeyond.com/html/carnation/carnation/img/images/s_released_cars_thumb05.jpg",
-        "description": "Sincere@april.biz",
-        "price": "1-770-736-8031 x56442",
-        "quantity": "hildegard.org",
-        "supplier": "hildegard.org"
+        "name": "Tesla C-2022",
+        "image": "https://img.freepik.com/free-photo/blue-sedan-car-driving-road-cloudy-weather_114579-4053.jpg",
+        "description": "esla was founded in 2003 by a group of engineers who wanted to prove that people didn't need to compromise to drive electric",
+        "price": "$3500",
+        "quantity": "10",
+        "supplier": "Tesla"
     },
     {
         "id": 6,
-        "name": "Leanne Graham",
-        "image": "https://themebeyond.com/html/carnation/carnation/img/images/s_released_cars_thumb06.jpg",
-        "description": "Sincere@april.biz",
-        "price": "1-770-736-8031 x56442",
-        "quantity": "hildegard.org",
-        "supplier": "hildegard.org"
+        "name": "Mercedes",
+        "image": "https://img.freepik.com/free-photo/white-sedan-driving-highway-accross-forest_114579-4391.jpg",
+        "description": "Emil went on to help create the Mercedes 35hp in 1900. Jellinek named the new cars after his daughter, Mercédès Jellinek.",
+        "price": "$5000",
+        "quantity": "60",
+        "supplier": "Jhankar Auto"
     }
 ]

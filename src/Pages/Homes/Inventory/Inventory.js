@@ -3,7 +3,7 @@ import { useNavigate } from 'react-router-dom';
 import './Inventory.css';
 
 const Inventory = ({ inventory }) => {
-    const { id, name, image, price, quantity, supplier } = inventory;
+    const { id, name, image, price, quantity, supplier, description } = inventory;
     const navigate = useNavigate()
     const manageItems = id => {
         navigate(`/inventory/${id}`)
@@ -16,10 +16,10 @@ const Inventory = ({ inventory }) => {
                 <img src={image} className="card-img-top" alt="..." />
                 <div className="card-body">
                     <h5 className="card-title">{name}</h5>
-                    <p className="card-title">{supplier}</p>
+                    <p className="card-title">Supplier: {supplier}</p>
                     <p className="card-title">Price: {price}</p>
                     <p className="card-title">Availabe Product: {quantity}</p>
-                    <p className="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    <p className="card-text">{description}</p>
 
                     <button onClick={() => manageItems(id)} className="btn button">Update</button>
                 </div>
