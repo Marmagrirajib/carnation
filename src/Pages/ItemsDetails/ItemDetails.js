@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
-import { Link, useParams } from 'react-router-dom';
-// import Update from '../Update/Update';
+import {  useParams } from 'react-router-dom';
+
 
 const ItemDetails = () => {
 
@@ -8,7 +8,7 @@ const ItemDetails = () => {
 
     const [inventories, setInventories] = useState({});
     useEffect(() => {
-        const url = `http://localhost:5000/inventory/${InventoryId}`
+        const url = `https://desolate-citadel-25650.herokuapp.com/inventory/${InventoryId}`
         fetch(url)
             .then(res => res.json())
             .then(data => setInventories(data));
